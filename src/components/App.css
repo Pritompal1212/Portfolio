@@ -1,0 +1,122 @@
+
+.border-animation-wrapper {
+    position: relative;
+    display: inline-block;
+    border-radius: 50%; 
+    overflow: hidden;
+  }
+  
+
+  .moving-border-1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    border: 4px solid transparent; 
+    border-top-color: green;
+    animation: move-border 7s linear infinite; 
+  }
+  
+
+  .moving-border-2 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    border: 4px solid transparent; 
+    border-bottom-color: green; 
+    animation: move-border 7s linear infinite; 
+  }
+  
+
+  @keyframes move-border {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg); 
+    }
+  }
+  
+
+  .moving-border-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%; 
+  }
+  
+
+
+
+  
+/* 
+.moving-border-card {
+  position: relative;
+  width: 300px; 
+  padding: 1rem;
+  margin: 1rem auto;
+  background-color: #1c1c1c;
+  color: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.card-content {
+  position: relative;
+  z-index: 1;
+}
+
+
+.moving-border-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 2px solid #ff00ff; 
+  border-radius: 8px;
+  box-sizing: border-box;
+  animation: move-border 2s linear infinite; 
+  z-index: 0;
+}
+
+@keyframes move-border {
+  0% {
+    clip-path: polygon(0 0, 100% 0, 100% 2px, 0 2px);
+  }
+  25% {
+    clip-path: polygon(100% 0, 100% 100%, 98% 100%, 98% 0);
+  }
+  50% {
+    clip-path: polygon(100% 100%, 0 100%, 0 98%, 100% 98%);
+  }
+  75% {
+    clip-path: polygon(0 100%, 0 0, 2px 0, 2px 100%);
+  }
+  100% {
+    clip-path: polygon(0 0, 100% 0, 100% 2px, 0 2px); 
+  }
+}
+
+.card-year {
+  font-size: 1rem;
+  color: #ff00ff;
+}
+
+.card-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin: 0.5rem 0;
+}
+
+.card-description {
+  font-size: 1rem;
+  line-height: 1.4;
+  color: #bbb;
+} */
