@@ -1,139 +1,75 @@
-// "#f8f9fa"
-function Contact() {
-    return (
-        <>
-            
-            <section
-                id="contact"
-                style={{
-                    padding: "40px 0",
-                    //backgroundColor: "#000"
-                    // #0b1120
-                }}
-            >
-                <div
-                    classNameName="container"
-                    style={{
-                        maxWidth: "600px",
-                        margin: "0 auto",
-                        textAlign: "center"
-                    }}
+
+export default function Contact() {
+  return (
+    <div className="container px-3 mt-5">
+      <div id="contact">
+        <div className="container">
+          <div className="row">
+            <div className="contact-left">
+              <h1 className="sub-title">Contact Me</h1>
+              <p>
+                <i className="fas fa-paper-plane"></i>huncyoms@gmail.com
+              </p>
+              <p>
+                <i className="fas fa-phone-square-alt"></i>8986983491
+              </p>
+              <div className="social-icons">
+                <a href="https://www.facebook.com/wzzg.gzzw" target="_blank">
+                  <i className="fa-brands fa-facebook"></i>{" "}
+                </a>
+                <a href="https://twitter.com/OMSAH_84?s=08" target="_blank">
+                  <i className="fab fa-twitter-square"></i>
+                </a>
+                <a
+                  href="https://instagram.com/omsah_84?igshid=ZDdkNTZiNTM="
+                  target="_blank"
                 >
-                    <h2
-                        style={{
-                            fontSize: "2rem",
-                            marginBottom: "20px"
-                        }}
-                    >
-                        Contact <span style={{ color: "#007bff" }}>Me!</span>
-                    </h2>
-
-                    <form action="#" method="post">
-                        <div classNameName="form-group row" style={{ display: "flex", flexWrap: "wrap", gap: "15px" }}>
-                            <input
-                                type="text"
-                                name="name"
-                                placeholder="Full Name"
-                                style={{
-                                    flex: "1 1 100%",
-                                    padding: "10px",
-                                    marginBottom: "10px",
-                                    border: "1px solid #ced4da",
-                                    borderRadius: "4px",
-                                    maxWidth: "100%",
-                                    background:"0000"
-                                }}
-                                required
-                            />
-
-                            <input
-                                type="email"
-                                name="email"
-                                placeholder="Email Address"
-                                style={{
-                                    flex: "1 1 100%",
-                                    padding: "10px",
-                                    marginBottom: "10px",
-                                    border: "1px solid #ced4da",
-                                    borderRadius: "4px",
-                                    maxWidth: "100%",
-                                    background:"0000"
-                                }}
-                                required
-                            />
-                        </div>
-
-                        <div classNameName="form-group row" style={{ display: "flex", flexWrap: "wrap", gap: "15px" }}>
-                            <input
-                                type="text"
-                                name="phone"
-                                placeholder="Mobile Number"
-                                style={{
-                                    flex: "1 1 100%",
-                                    padding: "10px",
-                                    marginBottom: "10px",
-                                    border: "1px solid #ced4da",
-                                    borderRadius: "4px",
-                                    maxWidth: "100%",
-                                    background:"0000"
-                                }}
-                                required
-                            />
-
-                            <input
-                                type="text"
-                                name="subject"
-                                placeholder="Email Subject"
-                                style={{
-                                    flex: "1 1 100%",
-                                    padding: "10px",
-                                    marginBottom: "10px",
-                                    border: "1px solid #ced4da",
-                                    borderRadius: "4px",
-                                    maxWidth: "100%",
-                                    background:"0000"
-                                }}
-                                required
-                            />
-                        </div>
-
-                        <div classNameName="form-group">
-                            <textarea
-                                name="message"
-                                rows="5"
-                                placeholder="Your Message"
-                                style={{
-                                    width: "100%",
-                                    padding: "10px",
-                                    marginBottom: "10px",
-                                    border: "1px solid #ced4da",
-                                    borderRadius: "4px",
-                                    background:"0000",
-                                    
-                                }}
-                                required
-                            ></textarea>
-                        </div>
-
-                        <button
-                            type="submit"
-                            style={{
-                                padding: "10px 20px",
-                                backgroundColor: "#007bff",
-                                color: "#fff",
-                                border: "none",
-                                borderRadius: "4px",
-                                cursor: "pointer"
-                            }}
-                        >
-                            Submit
-                        </button>
-                    </form>
-                </div>
-            </section>
-
-            
-        </>
-    )
-};
-export default Contact;
+                  <i className="fab fa-instagram"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/omsah84" target="_blank">
+                  <i className="fab fa-linkedin"></i>
+                </a>
+                <a href="https://github.com/omsah84" target="_blank">
+                  <i className="fa-brands fa-github"></i>
+                </a>
+              </div>
+              <a href="image/OMSAH.pdf" download className="btn btn2">
+                {" "}
+                Download CV
+              </a>
+            </div>
+            <div className="contact-right">
+              <form name="submit-to-google-sheet">
+                <input
+                  type="text"
+                  name="Name"
+                  placeholder="Your name"
+                  required
+                />
+                <input
+                  type="email"
+                  name="Email"
+                  placeholder="Your email"
+                  required
+                />
+                <textarea
+                  name="Message"
+                  rows="6"
+                  placeholder="Your message"
+                  required
+                >
+                  {" "}
+                </textarea>
+                <button type="submit" className="btn btn2">
+                  {" "}
+                  Submit
+                </button>
+              </form>
+              <span id="msg"></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+}

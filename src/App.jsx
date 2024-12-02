@@ -1,29 +1,25 @@
-import Navbar from "./components/Navbar"
+import Topbar from "./components/Topbar";
 import Frontpage from "./components/Frontpage";
 import Aboutme from "./components/Aboutme";
 import Skills from "./components/Skills";
 import Services from "./components/Services";
 import Contact from "./components/Contact";
-// import MovingBorder from "./components/MovingBorder";
-
-
+import Portfolio from "./components/Protfolio";
+import Footer from "./components/Footer";
 
 function App() {
-    
-return(
-  <>
-  
-  <Navbar/>
-  <Frontpage/>
-  <Aboutme/>
-  <Skills/>
-  <Services/> 
-  <Contact/>
-  {/* <MovingBorder/> */}
-  
-  
-  </>
-)
-};
+  return (
+    <>
+      <Topbar />
+      <Frontpage />
+      <Aboutme />
+      <Skills />
+      <Portfolio />
+      <Services />
+      <Contact />
+      <Footer />
+    </>
+  );
+}
 
 export default App;
