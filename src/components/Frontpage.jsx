@@ -4,19 +4,18 @@ function Frontpage() {
     <>
       <div
         className="container-fluid "
-        style={{ height: "700px", background: "0000" }}
+        style={{ background: "0000", height: "auto" }}
       >
         <div
-          className="row justify-content-around flex-column-reverse flex-md-row align-content-center text-center text-md-start"
-          style={{ height: "95vh"}}
+          className="row justify-content-around py-5 flex-column-reverse flex-md-row align-content-center text-center text-md-start"
+          style={{ height: "100%" }}
         >
           <div
             style={{
-             
               flexBasis: "50%",
-              height: "100%",
+              
             }}
-            className="col-12 col-sm-12 col-md-6 d-flex px-2 px-md-5 align-content-center flex-column justify-content-center"
+            className="col-12 col-sm-12 py-3 col-md-6 d-flex px-2 px-md-5 align-content-center flex-column justify-content-center"
           >
             <h1>
               HI, I'm <span style={{ color: "red" }}>Pritom Pal</span> <br />
@@ -27,7 +26,8 @@ function Frontpage() {
               blanditiis consequatur possimus nihil error in obcaecati.
             </p>
             <div>
-              <button className="download-button"
+              <button
+                className="download-button"
                 style={{
                   width: "fit-content",
                   borderRadius: "10px",
