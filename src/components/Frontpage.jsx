@@ -43,8 +43,8 @@ function Frontpage() {
                 backgroundColor: "#ffffe0",
                 padding: "10px auto",
                 animation: "bulbGlow 1s infinite ease-in-out",
-                boxShadow:
-                  "0px 0px 50px rgba(255, 255, 150, 0.8), 0px 0px 100px rgba(255, 255, 200, 0.6), 0px 0px 150px rgba(255, 255, 255, 0.5), 0px 0px 200px rgba(255, 255, 255, 0.4)",
+                // boxShadow:
+                  // "0px /0px 50px rgba(255, 255, 150, 0.8), 0px 0px 100px rgba(255, 255, 200, 0.6), 0px 0px 150px rgba(255, 255, 255, 0.5), 0px 0px 200px rgba(255, 255, 255, 0.4)",
               }}
             />
             <div className="moving-border-1"></div>
