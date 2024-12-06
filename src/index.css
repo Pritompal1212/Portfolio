@@ -1,4 +1,3 @@
-
 * {
     margin: 0px;
     padding: 0px;
@@ -6,7 +5,7 @@
     box-sizing: border-box;
 }
 
-html{
+html {
     scroll-behavior: smooth;
 
 }
@@ -27,7 +26,7 @@ body {
     .card {
         height: 320px;
         width: 284px;
-        
+
     }
 }
 
@@ -36,171 +35,194 @@ body {
     font-size: 16px;
     font-weight: bold;
     color: white;
-    background: linear-gradient(145deg, #34c759, #28a745); /* Green gradient */
+    background: linear-gradient(145deg, #34c759, #28a745);
+    /* Green gradient */
     border: none;
-    border-radius: 25px; /* Rounded corners */
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Soft shadow */
+    border-radius: 25px;
+    /* Rounded corners */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    /* Soft shadow */
     cursor: pointer;
     transition: transform 0.2s ease, box-shadow 0.2s ease;
-  }
-  
-  /* Button hover effect */
-  .download-button:hover {
+}
+
+/* Button hover effect */
+.download-button:hover {
     transform: translateY(-2px);
-    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.3); /* Enhanced shadow on hover */
-  }
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.3);
+    /* Enhanced shadow on hover */
+}
 
 
+.imageStyle{
+    width: 500px;
+    height: 500px;
+    margin: auto;
+    border-radius: 50%;
+}
 
+@media only screen and (max-width:600px) {
+    .imageStyle{
+        width: 400px;
+        height: 400px;
+    }
+}
 
+@media only screen and (max-width:400px) {
+    .imageStyle{
+        width: 300px;
+        height: 300px;
+    }
+}
 
 .border-animation-wrapper {
     position: relative;
     display: inline-block;
-    border-radius: 50%; 
+    border-radius: 50%;
     overflow: hidden;
-  }
-  
+}
 
-  .moving-border-1 {
+
+.moving-border-1 {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
     border-radius: 50%;
-    border: 4px solid transparent; 
+    border: 4px solid transparent;
     border-top-color: green;
     animation: move-border 7s linear infinite;
-  }
-  
+}
 
-  .moving-border-2 {
+
+.moving-border-2 {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
     border-radius: 50%;
-    border: 4px solid transparent; 
-    border-bottom-color: red; 
-    animation: move-border 7s linear infinite; 
-    /* box-shadow: 0px 10px 40px ; */
-  }
-  
+    border: 4px solid transparent;
+    border-bottom-color: red;
+    animation: move-border 7s linear infinite;
+}
 
-  @keyframes move-border {
+
+@keyframes move-border {
     0% {
-      transform: rotate(0deg);
+        transform: rotate(0deg);
     }
-    100% {
-      transform: rotate(360deg); 
-    }
-  }
-  
 
-  
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+
+
 
 /* for service section  */
-#services{
+#services {
     padding: 30px 0;
 }
 
-.services-list{
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
-    grid-gap: 40px;
-    margin-top: 50px;
-}
-
-.services-list div{
-    background: #262626;
-    padding: 40px;
-    font-size: 13px;
-    font-weight: 300;
-    border-radius: 10px;
-    transition: background 0.5s,transform 0.5s;
-}
-
-.services-list div i{
-    font-size: 50px;
-    margin-bottom: 30px;
-}
-
-.services-list div h2{
-    font-size: 30px;
-    font-weight: 500;
-    margin-bottom: 15px;
-}
-
-.services-list div a{
-    text-decoration: none;
-    color: #fff;
-    font-size: 12px;
-    margin-top:20px;
-    display: inline-block;
-}
-
-.services-list div:hover{
-    background:#00ff40;
-    transform: translateY(-10px);
-}
-
-
-/* for portfolio section style */
-#portfolio{
-    padding:50px 0;
-}
-.work-list{
+.services-list {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     grid-gap: 40px;
     margin-top: 50px;
 }
 
-.work{
+.services-list div {
+    background: #262626;
+    padding: 40px;
+    font-size: 13px;
+    font-weight: 300;
+    border-radius: 10px;
+    transition: background 0.5s, transform 0.5s;
+}
+
+.services-list div i {
+    font-size: 50px;
+    margin-bottom: 30px;
+}
+
+.services-list div h2 {
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+
+.services-list div a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 12px;
+    margin-top: 20px;
+    display: inline-block;
+}
+
+.services-list div:hover {
+    background: #00ff40;
+    transform: translateY(-10px);
+}
+
+
+/* for portfolio section style */
+#portfolio {
+    padding: 50px 0;
+}
+
+.work-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 40px;
+    margin-top: 50px;
+}
+
+.work {
     border-radius: 10px;
     position: relative;
     overflow: hidden;
 
 }
 
-.work img{
+.work img {
     width: 100%;
     border-radius: 10px;
     display: block;
     transition: transform 0.5s;
 }
 
-.layer{
-    width:100%;
-    height:0;
-    background: linear-gradient(rgba(0,0,0,0.6),#00ff51);
-    border-radius:10px;
-    position:absolute;
-    left:0;
-    bottom:0;
-    overflow:hidden;
+.layer {
+    width: 100%;
+    height: 0;
+    background: linear-gradient(rgba(0, 0, 0, 0.6), #00ff51);
+    border-radius: 10px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    overflow: hidden;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    padding:0 40px;
+    padding: 0 40px;
     text-align: center;
     font-size: 14px;
     transition: height 0.5s;
 }
 
-.layer h3{
+.layer h3 {
     font-weight: 500;
     margin-bottom: 20px;
 }
 
-.layer a{
+.layer a {
     margin-top: 20px;
-    color:#2d2225;
+    color: #2d2225;
     text-decoration: none;
-    font-size:18px;
+    font-size: 18px;
     line-height: 60px;
     background: #fff;
     height: 60px;
@@ -209,21 +231,21 @@ body {
     text-align: center;
 }
 
-.work:hover img{
+.work:hover img {
 
     transform: scale(1.1);
 
 }
 
-.work:hover .layer{
-    height:100%;
+.work:hover .layer {
+    height: 100%;
 }
 
 
-.btn{
+.btn {
     display: block;
     margin: 50px auto;
-    width:fit-content;
+    width: fit-content;
     border: 1px solid #ff004f;
     border-radius: 6px;
     text-decoration: none;
@@ -232,50 +254,50 @@ body {
     transition: backgroun 0.5s;
 }
 
-.btn:hover{
+.btn:hover {
     background: #8737c9;
 
 }
 
 
 
-.contact-left{
+.contact-left {
     flex-basis: 35%;
 }
 
-.contact-right{
+.contact-right {
     flex-basis: 60%;
 }
 
-.contact-left p{
+.contact-left p {
     margin-top: 30px;
 }
 
-.contact-left p i{
-    color:#ff004f;
+.contact-left p i {
+    color: #ff004f;
     margin-right: 15px;
     font-size: 25px;
 }
 
-.social-icons{
+.social-icons {
     margin-top: 30px;
 }
 
-.social-icons a{
+.social-icons a {
     text-decoration: none;
     font-size: 30px;
     margin-right: 15px;
     color: #ababab;
     display: inline-block;
-    transition: translateY(-5px); 
+    transition: translateY(-5px);
 }
 
-.social-icons a:hover{
+.social-icons a:hover {
     color: #ff00ff;
     transform: translateY(-5px);
 }
 
-.btn.btn2{
+.btn.btn2 {
     display: inline-block;
     background: #ff004f;
     margin-top: 15px;
@@ -283,30 +305,32 @@ body {
 
 
 /* for contact form  */
-.contact-right form{
+.contact-right form {
     width: 100%;
 }
-form input, form textarea{
-    width:100%;
-    border:0;
-    outline:none;
+
+form input,
+form textarea {
+    width: 100%;
+    border: 0;
+    outline: none;
     background: #262626;
-    padding:15px;
-    margin:15px 0;
+    padding: 15px;
+    margin: 15px 0;
     color: #fff;
     font-size: 18px;
     border-radius: 6px;
 }
 
-form .btn2{
-    padding:14px 60px;
+form .btn2 {
+    padding: 14px 60px;
     font-size: 18px;
     margin-top: 18px;
-    cursor:pointer;
+    cursor: pointer;
 }
 
-.copyright{
-    width:100%;
+.copyright {
+    width: 100%;
     text-align: center;
     padding: 15px 0;
     background: #262626;
@@ -323,26 +347,27 @@ form .btn2{
 /* -----------css for small screen -------------- */
 
 /* for small screen  */
-@media only screen and (max-width:1000px){
-    .contact-left, .contact-right{
+@media only screen and (max-width:1000px) {
+
+    .contact-left,
+    .contact-right {
         flex-basis: 100%;
     }
 
-    .copyright{
+    .copyright {
         font-size: 14px;
     }
 
     .logo {
         width: 50px;
-    
+
     }
 
 
 }
 
-#msg{
+#msg {
     color: #61b752;
     margin-top: -40px;
     display: block;
 }
-  
