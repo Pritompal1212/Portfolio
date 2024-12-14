@@ -7,7 +7,7 @@ export default function Topbar() {
       >
         <div className="container-fluid">
           <a className="navbar-brand" href="#">
-            Expand at sm
+            Pritom's kindom
           </a>
           <button
             className="navbar-toggler"
@@ -31,22 +31,27 @@ export default function Topbar() {
               </li>
               <li className="nav-item m-auto">
                 <a className="nav-link" href="#">
-                  Link
+                  About
                 </a>
               </li>
               <li className="nav-item m-auto">
                 <a className="nav-link" href="#">
-                  Link
+                Skills
                 </a>
               </li>
               <li className="nav-item m-auto">
                 <a className="nav-link" href="#">
-                  Link
+                  Projects
                 </a>
               </li>
               <li className="nav-item m-auto">
                 <a className="nav-link" href="#">
-                  Link
+                  Services
+                </a>
+              </li>
+              <li className="nav-item m-auto">
+                <a className="nav-link" href="#">
+                  Contact
                 </a>
               </li>
              

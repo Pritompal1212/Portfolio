@@ -18,12 +18,11 @@ function Frontpage() {
             className="col-12 col-sm-12 py-3 col-md-6 d-flex px-2 px-md-5 align-content-center flex-column justify-content-center"
           >
             <h1>
-              HI, I'm <span style={{ color: "red" }}>Pritom Pal</span> <br />
+              HI, I'm <span style={{ color: "green" }}>Pritom Pal</span> <br />
               Software Engineer
             </h1>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis
-              blanditiis consequatur possimus nihil error in obcaecati.
+            Proficient Web and Mobile App Developer with a focus on Data Analytics.
             </p>
             <div>
               <button
