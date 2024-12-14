@@ -371,3 +371,13 @@ form .btn2 {
     margin-top: -40px;
     display: block;
 }
+
+.custom-circle-top{
+    position: absolute;
+    top: 0px;
+    left: -5px;
+    width: 10px;
+    height: 10px;
+    border-radius:50%;
+    background-color:red;
+}
